@@ -1,11 +1,9 @@
-# nGestorX
 
 Sistema de Gestão Desktop Híbrido (Laravel + Electron)
 
 ---
 
 ## Descrição
-O nGestorX é uma aplicação desktop multiplataforma que utiliza o Electron como container para uma aplicação web desenvolvida em Laravel e tecnologias web. O Electron serve apenas para embutir ("embeber") a aplicação web, permitindo que ela seja executada como um aplicativo desktop, com acesso a recursos nativos do sistema operacional, sem necessidade de modificar o código web original.
 
 O foco deste projeto é a integração e empacotamento da aplicação web já existente, proporcionando uma experiência desktop moderna e responsiva.
 
