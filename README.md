@@ -28,8 +28,7 @@ O foco deste projeto é a integração e empacotamento da aplicação web já ex
 ## Instalação e Execução
 
 1. **Clone o repositório:**
-   > Substitua `<URL_DO_REPOSITORIO>` pelo endereço real do seu repositório (exemplo: https://github.com/softetech/ngestorx.git)
-   ```bash
+n
    git clone <URL_DO_REPOSITORIO>
    cd my-electron-projects
    ```
