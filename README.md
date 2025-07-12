@@ -11,7 +11,7 @@ O foco deste projeto é a integração e empacotamento da aplicação web já ex
 
 ## Principais Benefícios
 - **Reaproveitamento total do backend e frontend web**
-- **Distribuição facilitada**: instaladores para Linux (.deb, .AppImage)
+- **Distribuição facilitada**: instaladores para Linux (.deb, .AppImage) e Windows (.exe)
 - **Experiência desktop**: ícone, menu, integração com o SO
 - **Zero refatoração**: não é necessário alterar o código web
 
@@ -28,9 +28,10 @@ O foco deste projeto é a integração e empacotamento da aplicação web já ex
 ## Instalação e Execução
 
 1. **Clone o repositório:**
-n
+   > Substitua `<URL_DO_REPOSITORIO>` pelo endereço real do seu repositório (exemplo: https://github.com/vasconcelosmomad/laravel-eletron.git)
+   ```bash
    git clone <URL_DO_REPOSITORIO>
-   cd my-electron-projects
+   cd my-eletron-projects
    ```
 
 2. **Instale as dependências:**
@@ -46,9 +47,10 @@ n
 
 ---
 
-## Gerar Executável para Linux
+## Gerar Executável para Linux e Windows
 
-1. **Build para Linux (.deb e .AppImage):**
+### Linux (.deb e .AppImage)
+1. **Build para Linux:**
    ```bash
    npm run build:linux
    ```
@@ -65,12 +67,33 @@ n
    ./dist/nGestorX-2.0.0.AppImage
    ```
 
+#### Desinstalar o pacote .deb
+Para remover o aplicativo instalado via `.deb`:
+```bash
+sudo apt remove ngestorx
+```
+Para remover completamente (incluindo arquivos de configuração):
+```bash
+sudo apt purge ngestorx
+```
+Para limpar dependências não utilizadas:
+```bash
+sudo apt autoremove
+```
+
+### Windows (.exe)
+1. **Build para Windows:**
+   ```bash
+   npm run build:win
+   ```
+   O instalador `.exe` será gerado na pasta `dist`.
+
 ---
 
 ## Estrutura Recomendada do Projeto
 
 ```
-my-electron-projects/
+my-eletron-projects/
 ├── main.js                # Processo principal do Electron
 ├── preload.js             # Script de preload para comunicação segura
 ├── package.json           # Configurações do Electron e build
@@ -95,9 +118,9 @@ my-electron-projects/
 ---
 
 ## Contato
-- **Empresa:** SOFTETECH -  Inovação em Software e Tecnologias Emergentes
-- **Responsável:** MOMADE VASCONCELOS
--**Tel:** 878131994/847553731
+- **Empresa:** SOFTETECH
+- **Responsável:** mvasconcelos@softetech.com
+- **Homepage:** https://ngestorx.softetech.com
 
 ---
 
