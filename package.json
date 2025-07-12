@@ -1,0 +1,62 @@
+{
+  "name": "nGestorX",
+  "version": "2.0.0",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder",
+    "build:linux": "electron-builder --linux",
+    "build:linux-deb": "electron-builder --linux deb",
+    "build:linux-appimage": "electron-builder --linux AppImage"
+  },
+  "keywords": [],
+  "author": {
+    "name": "SOFTETECH",
+    "email": "mvasconcelos@softetech.com"
+  },
+  "homepage": "https://ngestorx.softetech.com",
+  "license": "ISC",
+  "description": "nGestorX",
+  "build": {
+    "appId": "com.softtech.ngestorx",
+    "productName": "nGestorX",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "node_modules/**/*"
+    ],
+    "linux": {
+      "target": [
+        {
+          "target": "AppImage",
+          "arch": [
+            "x64"
+          ]
+        },
+        {
+          "target": "deb",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "category": "Office",
+      "icon": "icons/icon-256.png",
+      "maintainer": "SOFTETECH <mvasconcelos@softetech.com>",
+      "desktop": {
+        "Name": "nGestorX",
+        "Comment": "Sistema de Gestão nGestorX",
+        "Type": "Application",
+        "Categories": "Office;"
+      }
+    }
+  },
+  "devDependencies": {
+    "electron": "^37.2.0",
+    "electron-builder": "^25.1.8"
+  }
+}
