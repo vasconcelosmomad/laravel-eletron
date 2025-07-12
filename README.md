@@ -95,9 +95,9 @@ my-electron-projects/
 ---
 
 ## Contato
-- **Empresa:** SOFTETECH
-- **Responsável:** mvasconcelos@softetech.com
-- **Homepage:** https://ngestorx.softetech.com
+- **Empresa:** SOFTETECH -  Inovação em Software e Tecnologias Emergentes
+- **Responsável:** MOMADE VASCONCELOS
+-**Tel:** 878131994/847553731
 
 ---
 
